@@ -28,11 +28,24 @@ public class BaseBallTeam {
         return draw;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+    public void setWin(int win) {
+        this.win = win;
+    }
+    public void seLose(int lose) {
+        this.lose = lose;
+    }
+    public void setDraw(int draw) {
+        this.draw = draw;
+    }
+
     public double getRate() {
         if(win +lose ==0) {
             return 0;
         }else {
-            return (double)win /(win+lose);
+            return (double)this.win /(this.win+this.lose);
         }
     }
 
